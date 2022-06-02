@@ -1,0 +1,349 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*css variables*/
+:root{
+    --navbar-height:20%;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+    #navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+
+/* Navigation Bar: logo and image  */
+#logo {
+    margin: 34px 45px;
+}
+#logo img{
+    height: 56px;
+    margin: 34px 45px;
+
+}
+
+/*Navigation Bar: List Styling  */
+#navbar{
+    position: absolute;
+}
+ #navbar
+ ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+   
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+} 
+/* Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content:center; 
+    height: 633px;
+    align-items:center ;
+}
+#Home::before{
+    content: "";
+    position: absolute;
+    background:url('../bg.jpg') no-repeat center center/cover;
+    height:100%;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index:-1;
+    opacity:0.89; 
+    
+}
+
+#Home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif ;
+
+}
+#Home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif ;
+
+}
+/* Services section */
+
+ #services{
+     margin:34px;
+     display:flex;
+ }
+
+#services  .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:3px 6px;
+    border-radius:23px;
+    background-color:#f2f2f2;
+}
+#services.box img{
+    height:150px;
+    margin:auto;
+    display:block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Contact Us section */
+#contact{
+    position: relative;
+}
+#contactus::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('../contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box input,
+#contact-box textarea{
+        width: 100%;
+        padding:0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box form{
+    width:40%
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background:black ;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size:  2.8em;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size:  2.8em;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5 rem;
+    cursor: pointer;
+}
+
+ .center{
+     text-align: center;
+ }
+
+ /* Hibiscus */
+ #hibiscus img{
+     height: 10px;
+     width: 20px;
+ }
+ 
+  /* Rose */
+  #Rose img{
+      height: 10px;
+      width: 20px;
+  }
+
+
+
+
+    
+ #cactus{
+     height: 10px;
+     width: 20px;
+ } 
+ button{
+     padding: 5px;
+     background: green;
+     font-weight: bold;
+     color: #fafafa;
+     cursor: pointer;
+ } 
+ .select{
+     width: 600px;
+     height: 580px;
+     background: #222;
+     position: absolute;
+     top: -1000px;
+     left:20%;
+     transition: 0.5%;
+     overflow: auto;
+     margin: auto;
+ }
+ .select div{
+     width: 100%;
+     height: 200px;
+     display: flex;
+     padding: 5px;
+     border: 1px solid white;
+     position: relative;
+     margin: 5px auto;
+
+ }
+ .select div img{
+     width: 300px;
+     height: 100%;
+
+ }
+ .select div p{
+     padding: 35px;
+     color: white;
+
+ }
+ .select div p,
+ .select div button{
+     position: absolute;
+     left:45%;
+     top:50%;
+     color: white;
+ }
+ .select div button{
+    left:60%;
+    top:55%;
+
+ }
+h1.zero:before{
+    opacity: 1;
+
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5 rem;
+    align-items: center;
+}
+.about  .row  .image{ 
+    flex:1 1 45rem;
+
+}
+.about .row  .image{ 
+    flex:1 1 45rem;
+
+}
+.about.row  .image img{ 
+    width:100%;
+
+}
+
+.about .row  .content{ 
+    flex:1 1 45rem;
+
+}
+
+.about .row .content h3{
+    color:-var(--black);
+    font-size: 4rem;
+    padding: 0.5rem;
+}
+.about .row .content p{
+    color:-var(--light-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    line-height: 2;
+}
+
+.about .row  .content .icons-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: 0.5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1 rem;
+    flex:1 1 17rem;
+    padding: 1.5rem 1rem;
+
+}
+.about .row .content .icons-container .icons i{
+    font-size:2.5rem;
+    color: var(--green);
+}
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+ 
+
+ 
+
+
+
+
+
+
+
+   
+
+    
+
